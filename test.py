@@ -2,6 +2,15 @@
 #sctest.run()
 
 import numpy as np
-dimension = 4
-offdiag_elements = np.sqrt(range(1, dimension))
-print(np.diagflat(offdiag_elements, 1))
+import matplotlib.pyplot as plt
+
+x = np.arange(-1.,1.,0.05)
+y = np.arange(-1.,1.,0.05)
+
+fig = plt.figure()
+ax = plt.axes(projection='3d')
+xg,yg = np.meshgrid(x, y)
+ax.plot_surface(xg,yg, xg*xg+yg*yg)
+plt.xlabel("x (GHz)")
+plt.ylabel("y (GHz)")
+plt.title("f(x,y) (us)")
