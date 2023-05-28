@@ -1,4 +1,4 @@
-Optimisation of Superconducting Quantum Circuits with Automatic Differentiation
+**Optimisation of Superconducting Quantum Circuits with Automatic Differentiation**
 
 transmon_fluxonium_plots created Fig1 and Fig2
 
